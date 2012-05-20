@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SGRI_BDModelStoreContainer" CdmEntityContainer="StringConexaoSGRI_BD">
+    <EntitySetMapping Name="EQUIPAMENTOS">
+      <EntityTypeMapping TypeName="SGRI_BDModel.EQUIPAMENTOS">
+        <MappingFragment StoreEntitySet="EQUIPAMENTOS">
+          <ScalarProperty Name="IDEquipamento" ColumnName="IDEquipamento" />
+          <ScalarProperty Name="Codigo_Patrimonio" ColumnName="Codigo_Patrimonio" />
+          <ScalarProperty Name="Tipo_Equipamento" ColumnName="Tipo_Equipamento" />
+          <ScalarProperty Name="Descricao_Equipamento" ColumnName="Descricao_Equipamento" />
+          <ScalarProperty Name="Status_Equipamento" ColumnName="Status_Equipamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SALAS">
+      <EntityTypeMapping TypeName="SGRI_BDModel.SALAS">
+        <MappingFragment StoreEntitySet="SALAS">
+          <ScalarProperty Name="IDSala" ColumnName="IDSala" />
+          <ScalarProperty Name="Descricao_Sala" ColumnName="Descricao_Sala" />
+          <ScalarProperty Name="Localizacao_Sala" ColumnName="Localizacao_Sala" />
+          <ScalarProperty Name="Capacidade_Sala" ColumnName="Capacidade_Sala" />
+          <ScalarProperty Name="Tipo_Sala" ColumnName="Tipo_Sala" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

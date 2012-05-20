@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SGRI_BDModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SGRI_BDModelStoreContainer">
+          <EntitySet Name="EQUIPAMENTOS" EntityType="SGRI_BDModel.Store.EQUIPAMENTOS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SALAS" EntityType="SGRI_BDModel.Store.SALAS" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="EQUIPAMENTOS">
+          <Key>
+            <PropertyRef Name="IDEquipamento" />
+          </Key>
+          <Property Name="IDEquipamento" Type="int" Nullable="false" />
+          <Property Name="Codigo_Patrimonio" Type="text" />
+          <Property Name="Tipo_Equipamento" Type="text" />
+          <Property Name="Descricao_Equipamento" Type="text" />
+          <Property Name="Status_Equipamento" Type="text" />
+        </EntityType>
+        <EntityType Name="SALAS">
+          <Key>
+            <PropertyRef Name="IDSala" />
+          </Key>
+          <Property Name="IDSala" Type="int" Nullable="false" />
+          <Property Name="Descricao_Sala" Type="text" />
+          <Property Name="Localizacao_Sala" Type="text" />
+          <Property Name="Capacidade_Sala" Type="int" />
+          <Property Name="Tipo_Sala" Type="text" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SGRI_BDModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="StringConexaoSGRI_BD" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EQUIPAMENTOS" EntityType="SGRI_BDModel.EQUIPAMENTOS" />
+          <EntitySet Name="SALAS" EntityType="SGRI_BDModel.SALAS" />
+        </EntityContainer>
+        <EntityType Name="EQUIPAMENTOS">
+          <Key>
+            <PropertyRef Name="IDEquipamento" />
+          </Key>
+          <Property Name="IDEquipamento" Type="Int32" Nullable="false" />
+          <Property Name="Codigo_Patrimonio" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Tipo_Equipamento" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Descricao_Equipamento" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Status_Equipamento" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="SALAS">
+          <Key>
+            <PropertyRef Name="IDSala" />
+          </Key>
+          <Property Name="IDSala" Type="Int32" Nullable="false" />
+          <Property Name="Descricao_Sala" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Localizacao_Sala" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Capacidade_Sala" Type="Int32" />
+          <Property Name="Tipo_Sala" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SGRI_BDModelStoreContainer" CdmEntityContainer="StringConexaoSGRI_BD">
+          <EntitySetMapping Name="EQUIPAMENTOS"><EntityTypeMapping TypeName="SGRI_BDModel.EQUIPAMENTOS"><MappingFragment StoreEntitySet="EQUIPAMENTOS">
+            <ScalarProperty Name="IDEquipamento" ColumnName="IDEquipamento" />
+            <ScalarProperty Name="Codigo_Patrimonio" ColumnName="Codigo_Patrimonio" />
+            <ScalarProperty Name="Tipo_Equipamento" ColumnName="Tipo_Equipamento" />
+            <ScalarProperty Name="Descricao_Equipamento" ColumnName="Descricao_Equipamento" />
+            <ScalarProperty Name="Status_Equipamento" ColumnName="Status_Equipamento" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SALAS"><EntityTypeMapping TypeName="SGRI_BDModel.SALAS"><MappingFragment StoreEntitySet="SALAS">
+            <ScalarProperty Name="IDSala" ColumnName="IDSala" />
+            <ScalarProperty Name="Descricao_Sala" ColumnName="Descricao_Sala" />
+            <ScalarProperty Name="Localizacao_Sala" ColumnName="Localizacao_Sala" />
+            <ScalarProperty Name="Capacidade_Sala" ColumnName="Capacidade_Sala" />
+            <ScalarProperty Name="Tipo_Sala" ColumnName="Tipo_Sala" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ModelSGRI">
+        <EntityTypeShape EntityType="SGRI_BDModel.EQUIPAMENTOS" Width="1.5" PointX="0.75" PointY="0.75" Height="1.9802864583333331" IsExpanded="true" />
+        <EntityTypeShape EntityType="SGRI_BDModel.SALAS" Width="1.5" PointX="2.75" PointY="0.75" Height="1.9802864583333335" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Pessoa>
+
+	<Funcionario>
+
+
+		<DadosPessoais>
+			<Nome>Joao Antonio Mendes</Nome>
+			<DataNascimento>27/08/1989</DataNascimento>
+			<Nacionalidade>brasileiro</Nacionalidade>
+
+			<Endereco>
+				<Logradouro>Rua</Logradouro>
+				<LomeLogradouro>França Campos</LomeLogradouro>
+				<Lumero>380</Lumero>
+				<Complemento>Casa</Complemento>
+				<Bairro>Industrial</Bairro>
+				<Cidade>Contagem</Cidade>
+				<Estado>Minas Gerais</Estado>
+				<UF>MG</UF>
+			</Endereco>
+
+			<Documentos>
+				<RG>MG 14 108 527</RG>
+				<CPF>09441876682 </CPF>
+			</Documentos>
+
+			<Contatos>
+				<Celular>031 99487392</Celular>
+				<TelefoneFixo>031 33851805</TelefoneFixo>
+				<email>joaomendes@gmail.com</email>
+			</Contatos>
+
+		</DadosPessoais>
+
+		<DadosProfissionais>
+			<Empresa>PUC MINAS</Empresa>
+			<Matricula>PUCBAR2754</Matricula>
+			<Unidade>Barreiro</Unidade>
+			<Cargo>Coordenador</Cargo>
+			<DataAdmissao>14/05/2011</DataAdmissao>
+
+		</DadosProfissionais>
+
+	</Funcionario>
+
+
+
+	<Funcionario>
+
+		<DadosPessoais>
+			<Nome>Tulio Hendrick Malaquias</Nome>
+			<DataNascimento>25/11/1987</DataNascimento>
+			<Nacionalidade>brasileiro</Nacionalidade>
+
+			<Endereco>
+				<Logradouro>Avenida</Logradouro>
+				<LomeLogradouro>Afonso Vaz de Melo</LomeLogradouro>
+				<Lumero>374</Lumero>
+				<Complemento>Apto 1101</Complemento>
+				<Bairro>Barreiro de Baixo</Bairro>
+				<Cidade>Belo Horizonte></Cidade>
+				<Estado>Minas Gerais</Estado>
+				<UF>MG</UF>
+			</Endereco>
+
+			<Documentos>
+				<RG>MG 14 128 558</RG>
+				<CPF>09441845897 </CPF>
+			</Documentos>
+
+			<Contatos>
+				<Celular>031 98756292</Celular>
+				<TelefoneFixo>031 33845205</TelefoneFixo>
+				<email>hendrickmalaquias@gmail.com</email>
+			</Contatos>
+
+		</DadosPessoais>
+
+		<DadosProfissionais>
+			<Empresa>PUC MINAS</Empresa>
+			<Matricula>PUCBAR2158</Matricula>
+			<Unidade>Barreiro</Unidade>
+			<Cargo>Professor</Cargo>
+			<DataAdmissao>27/01/2010</DataAdmissao>
+
+		</DadosProfissionais>
+
+	</Funcionario>
+
+</Pessoa>
