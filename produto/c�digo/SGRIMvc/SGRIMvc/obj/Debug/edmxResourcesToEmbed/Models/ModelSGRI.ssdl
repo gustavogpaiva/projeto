@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SGRI_BDModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SGRI_BDModelStoreContainer">
+    <EntitySet Name="EQUIPAMENTOS" EntityType="SGRI_BDModel.Store.EQUIPAMENTOS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FUNCIONARIOS" EntityType="SGRI_BDModel.Store.FUNCIONARIOS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SALAS" EntityType="SGRI_BDModel.Store.SALAS" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="EQUIPAMENTOS">
+    <Key>
+      <PropertyRef Name="IDEquipamento" />
+    </Key>
+    <Property Name="IDEquipamento" Type="int" Nullable="false" />
+    <Property Name="Codigo_Patrimonio" Type="text" />
+    <Property Name="Tipo_Equipamento" Type="text" />
+    <Property Name="Descricao_Equipamento" Type="text" />
+    <Property Name="Status_Equipamento" Type="text" />
+  </EntityType>
+  <EntityType Name="FUNCIONARIOS">
+    <Key>
+      <PropertyRef Name="IDFuncionario" />
+    </Key>
+    <Property Name="IDFuncionario" Type="int" Nullable="false" />
+    <Property Name="Matricula_Funcionario" Type="text" />
+    <Property Name="Nome_Funcionario" Type="text" />
+    <Property Name="Tipo_Funcionario" Type="text" />
+    <Property Name="Cargo_Funcionario" Type="text" />
+    <Property Name="Login_Funcionario" Type="text" />
+    <Property Name="Senha_Funcionario" Type="text" />
+  </EntityType>
+  <EntityType Name="SALAS">
+    <Key>
+      <PropertyRef Name="IDSala" />
+    </Key>
+    <Property Name="IDSala" Type="int" Nullable="false" />
+    <Property Name="Descricao_Sala" Type="text" />
+    <Property Name="Localizacao_Sala" Type="text" />
+    <Property Name="Capacidade_Sala" Type="int" />
+    <Property Name="Tipo_Sala" Type="text" />
+  </EntityType>
+</Schema>
