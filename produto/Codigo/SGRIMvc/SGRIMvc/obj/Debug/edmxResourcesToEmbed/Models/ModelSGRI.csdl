@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SGRI_BDModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="StringConexaoSGRI_BD" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EQUIPAMENTOS" EntityType="SGRI_BDModel.EQUIPAMENTOS" />
+    <EntitySet Name="SALAS" EntityType="SGRI_BDModel.SALAS" />
+    <EntitySet Name="FUNCIONARIOS" EntityType="SGRI_BDModel.FUNCIONARIOS" />
+    <EntitySet Name="TURMA_HORARIO" EntityType="SGRI_BDModel.TURMA_HORARIO" />
+    <EntitySet Name="RESERVA_AULAS" EntityType="SGRI_BDModel.RESERVA_AULAS" />
+    <EntitySet Name="RESERVA_EVENTOS" EntityType="SGRI_BDModel.RESERVA_EVENTOS" />
+  </EntityContainer>
+  <EntityType Name="EQUIPAMENTOS">
+    <Key>
+      <PropertyRef Name="IDEquipamento" />
+    </Key>
+    <Property Name="IDEquipamento" Type="Int32" Nullable="false" />
+    <Property Name="Codigo_Patrimonio" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Tipo_Equipamento" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Descricao_Equipamento" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Status_Equipamento" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SALAS">
+    <Key>
+      <PropertyRef Name="IDSala" />
+    </Key>
+    <Property Name="IDSala" Type="Int32" Nullable="false" />
+    <Property Name="Descricao_Sala" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Localizacao_Sala" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Capacidade_Sala" Type="Int32" />
+    <Property Name="Tipo_Sala" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="FUNCIONARIOS">
+    <Key>
+      <PropertyRef Name="IDFuncionario" />
+    </Key>
+    <Property Type="Int32" Name="IDFuncionario" Nullable="false" />
+    <Property Type="String" Name="Matricula_Funcionario" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nome_Funcionario" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Tipo_Funcionario" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Cargo_Funcionario" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Login_Funcionario" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Senha_Funcionario" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TURMA_HORARIO">
+    <Key>
+      <PropertyRef Name="IDTurma" />
+    </Key>
+    <Property Type="Int32" Name="IDTurma" Nullable="false" />
+    <Property Type="String" Name="Turma" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Horario" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Sala" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Professor_Turma" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Andar_Sala" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Predio_Sala" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="RESERVA_AULAS">
+    <Key>
+      <PropertyRef Name="IDReserva_Aula" />
+    </Key>
+    <Property Type="Int32" Name="IDReserva_Aula" Nullable="false" />
+    <Property Type="String" Name="Data_Reserva" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Professor_Aula" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Disciplina_Aula" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Horario_Aula" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Dia_Aula" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Equipamento_Aula" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Sala_Aula" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="RESERVA_EVENTOS">
+    <Key>
+      <PropertyRef Name="IDReserva_Evento" />
+    </Key>
+    <Property Type="Int32" Name="IDReserva_Evento" Nullable="false" />
+    <Property Type="String" Name="Nome_Evento" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Data_Evento" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prorfessores_Evento" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Sala_Evento" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Equipamentos_Evento" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

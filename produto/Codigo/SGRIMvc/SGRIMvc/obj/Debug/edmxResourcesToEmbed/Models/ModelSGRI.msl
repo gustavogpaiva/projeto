@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SGRI_BDModelStoreContainer" CdmEntityContainer="StringConexaoSGRI_BD">
+    <EntitySetMapping Name="EQUIPAMENTOS">
+      <EntityTypeMapping TypeName="SGRI_BDModel.EQUIPAMENTOS">
+        <MappingFragment StoreEntitySet="EQUIPAMENTOS">
+          <ScalarProperty Name="IDEquipamento" ColumnName="IDEquipamento" />
+          <ScalarProperty Name="Codigo_Patrimonio" ColumnName="Codigo_Patrimonio" />
+          <ScalarProperty Name="Tipo_Equipamento" ColumnName="Tipo_Equipamento" />
+          <ScalarProperty Name="Descricao_Equipamento" ColumnName="Descricao_Equipamento" />
+          <ScalarProperty Name="Status_Equipamento" ColumnName="Status_Equipamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SALAS">
+      <EntityTypeMapping TypeName="SGRI_BDModel.SALAS">
+        <MappingFragment StoreEntitySet="SALAS">
+          <ScalarProperty Name="IDSala" ColumnName="IDSala" />
+          <ScalarProperty Name="Descricao_Sala" ColumnName="Descricao_Sala" />
+          <ScalarProperty Name="Localizacao_Sala" ColumnName="Localizacao_Sala" />
+          <ScalarProperty Name="Capacidade_Sala" ColumnName="Capacidade_Sala" />
+          <ScalarProperty Name="Tipo_Sala" ColumnName="Tipo_Sala" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FUNCIONARIOS">
+      <EntityTypeMapping TypeName="SGRI_BDModel.FUNCIONARIOS">
+        <MappingFragment StoreEntitySet="FUNCIONARIOS">
+          <ScalarProperty Name="Senha_Funcionario" ColumnName="Senha_Funcionario" />
+          <ScalarProperty Name="Login_Funcionario" ColumnName="Login_Funcionario" />
+          <ScalarProperty Name="Cargo_Funcionario" ColumnName="Cargo_Funcionario" />
+          <ScalarProperty Name="Tipo_Funcionario" ColumnName="Tipo_Funcionario" />
+          <ScalarProperty Name="Nome_Funcionario" ColumnName="Nome_Funcionario" />
+          <ScalarProperty Name="Matricula_Funcionario" ColumnName="Matricula_Funcionario" />
+          <ScalarProperty Name="IDFuncionario" ColumnName="IDFuncionario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TURMA_HORARIO">
+      <EntityTypeMapping TypeName="SGRI_BDModel.TURMA_HORARIO">
+        <MappingFragment StoreEntitySet="TURMA_HORARIO">
+          <ScalarProperty Name="Predio_Sala" ColumnName="Predio_Sala" />
+          <ScalarProperty Name="Andar_Sala" ColumnName="Andar_Sala" />
+          <ScalarProperty Name="Professor_Turma" ColumnName="Professor_Turma" />
+          <ScalarProperty Name="Sala" ColumnName="Sala" />
+          <ScalarProperty Name="Horario" ColumnName="Horario" />
+          <ScalarProperty Name="Turma" ColumnName="Turma" />
+          <ScalarProperty Name="IDTurma" ColumnName="IDTurma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RESERVA_AULAS">
+      <EntityTypeMapping TypeName="SGRI_BDModel.RESERVA_AULAS">
+        <MappingFragment StoreEntitySet="RESERVA_AULAS">
+          <ScalarProperty Name="Sala_Aula" ColumnName="Sala_Aula" />
+          <ScalarProperty Name="Equipamento_Aula" ColumnName="Equipamento_Aula" />
+          <ScalarProperty Name="Dia_Aula" ColumnName="Dia_Aula" />
+          <ScalarProperty Name="Horario_Aula" ColumnName="Horario_Aula" />
+          <ScalarProperty Name="Disciplina_Aula" ColumnName="Disciplina_Aula" />
+          <ScalarProperty Name="Professor_Aula" ColumnName="Professor_Aula" />
+          <ScalarProperty Name="Data_Reserva" ColumnName="Data_Reserva" />
+          <ScalarProperty Name="IDReserva_Aula" ColumnName="IDReserva_Aula" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RESERVA_EVENTOS">
+      <EntityTypeMapping TypeName="SGRI_BDModel.RESERVA_EVENTOS">
+        <MappingFragment StoreEntitySet="RESERVA_EVENTOS">
+          <ScalarProperty Name="Equipamentos_Evento" ColumnName="Equipamentos_Evento" />
+          <ScalarProperty Name="Sala_Evento" ColumnName="Sala_Evento" />
+          <ScalarProperty Name="Prorfessores_Evento" ColumnName="Prorfessores_Evento" />
+          <ScalarProperty Name="Data_Evento" ColumnName="Data_Evento" />
+          <ScalarProperty Name="Nome_Evento" ColumnName="Nome_Evento" />
+          <ScalarProperty Name="IDReserva_Evento" ColumnName="IDReserva_Evento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

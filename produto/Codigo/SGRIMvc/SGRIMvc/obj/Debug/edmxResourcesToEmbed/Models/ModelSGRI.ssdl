@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SGRI_BDModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SGRI_BDModelStoreContainer">
+    <EntitySet Name="EQUIPAMENTOS" EntityType="SGRI_BDModel.Store.EQUIPAMENTOS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FUNCIONARIOS" EntityType="SGRI_BDModel.Store.FUNCIONARIOS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RESERVA_AULAS" EntityType="SGRI_BDModel.Store.RESERVA_AULAS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RESERVA_EVENTOS" EntityType="SGRI_BDModel.Store.RESERVA_EVENTOS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SALAS" EntityType="SGRI_BDModel.Store.SALAS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TURMA_HORARIO" EntityType="SGRI_BDModel.Store.TURMA_HORARIO" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="EQUIPAMENTOS">
+    <Key>
+      <PropertyRef Name="IDEquipamento" />
+    </Key>
+    <Property Name="IDEquipamento" Type="int" Nullable="false" />
+    <Property Name="Codigo_Patrimonio" Type="text" />
+    <Property Name="Tipo_Equipamento" Type="text" />
+    <Property Name="Descricao_Equipamento" Type="text" />
+    <Property Name="Status_Equipamento" Type="text" />
+  </EntityType>
+  <EntityType Name="FUNCIONARIOS">
+    <Key>
+      <PropertyRef Name="IDFuncionario" />
+    </Key>
+    <Property Name="IDFuncionario" Type="int" Nullable="false" />
+    <Property Name="Matricula_Funcionario" Type="text" />
+    <Property Name="Nome_Funcionario" Type="text" />
+    <Property Name="Tipo_Funcionario" Type="text" />
+    <Property Name="Cargo_Funcionario" Type="text" />
+    <Property Name="Login_Funcionario" Type="text" />
+    <Property Name="Senha_Funcionario" Type="text" />
+  </EntityType>
+  <EntityType Name="RESERVA_AULAS">
+    <Key>
+      <PropertyRef Name="IDReserva_Aula" />
+    </Key>
+    <Property Name="IDReserva_Aula" Type="int" Nullable="false" />
+    <Property Name="Data_Reserva" Type="text" />
+    <Property Name="Professor_Aula" Type="text" />
+    <Property Name="Disciplina_Aula" Type="text" />
+    <Property Name="Horario_Aula" Type="text" />
+    <Property Name="Dia_Aula" Type="text" />
+    <Property Name="Equipamento_Aula" Type="text" />
+    <Property Name="Sala_Aula" Type="text" />
+  </EntityType>
+  <EntityType Name="RESERVA_EVENTOS">
+    <Key>
+      <PropertyRef Name="IDReserva_Evento" />
+    </Key>
+    <Property Name="IDReserva_Evento" Type="int" Nullable="false" />
+    <Property Name="Nome_Evento" Type="text" />
+    <Property Name="Data_Evento" Type="text" />
+    <Property Name="Prorfessores_Evento" Type="text" />
+    <Property Name="Sala_Evento" Type="text" />
+    <Property Name="Equipamentos_Evento" Type="text" />
+  </EntityType>
+  <EntityType Name="SALAS">
+    <Key>
+      <PropertyRef Name="IDSala" />
+    </Key>
+    <Property Name="IDSala" Type="int" Nullable="false" />
+    <Property Name="Descricao_Sala" Type="text" />
+    <Property Name="Localizacao_Sala" Type="text" />
+    <Property Name="Capacidade_Sala" Type="int" />
+    <Property Name="Tipo_Sala" Type="text" />
+  </EntityType>
+  <EntityType Name="TURMA_HORARIO">
+    <Key>
+      <PropertyRef Name="IDTurma" />
+    </Key>
+    <Property Name="IDTurma" Type="int" Nullable="false" />
+    <Property Name="Turma" Type="text" />
+    <Property Name="Horario" Type="text" />
+    <Property Name="Sala" Type="text" />
+    <Property Name="Professor_Turma" Type="text" />
+    <Property Name="Andar_Sala" Type="text" />
+    <Property Name="Predio_Sala" Type="text" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Turma>
+
+	<TURMA_HORARIO>
+		<IDTurma> 9879000 </IDTurma>
+		<Turma> Banco de Dados 1 </Turma>
+		<Horario> 1 e 2 segunda-feira</Horario>
+		<Sala> 304 </Sala>
+		<Professor_Turma> Manoel Palhares </Professor_Turma>
+		<Andar_Sala> 3 </Andar_Sala>
+ 		<Predio_Sala> 2 </Predio_Sala>
+	</TURMA_HORARIO>
+	
+	<TURMA_HORARIO>
+		<IDTurma> 6645272 </IDTurma>
+		<Turma> Projeto de Sistemas de Informação </Turma>
+		<Horario> 3 e 4  segunda-feira</Horario>
+		<Sala> 304 </Sala>
+		<Professor_Turma> Maria Augusta </Professor_Turma>
+		<Andar_Sala> 3 </Andar_Sala>
+ 		<Predio_Sala> 2 </Predio_Sala>
+	</TURMA_HORARIO>
+	
+	<TURMA_HORARIO>
+		<IDTurma> 11187980 </IDTurma>
+		<Turma> Projeto de Sistemas de Informação </Turma>
+		<Horario> 1 e 2 terça-feira </Horario>
+		<Sala> 304 </Sala>
+		<Professor_Turma> Maria Augusta </Professor_Turma>
+		<Andar_Sala> 3 </Andar_Sala>
+ 		<Predio_Sala> 2 </Predio_Sala>
+	</TURMA_HORARIO>
+	
+	
+	
+	<TURMA_HORARIO>
+		<IDTurma> 84573895 </IDTurma>
+		<Turma> Inteligência Artificial </Turma>
+		<Horario> 3 e 4 Terça- feira </Horario>
+		<Sala> 304 </Sala>
+		<Professor_Turma> Saulo Augusto </Professor_Turma>
+		<Andar_Sala> 3 </Andar_Sala>
+ 		<Predio_Sala> 2 </Predio_Sala>
+	</TURMA_HORARIO>
+
+</Turma>
